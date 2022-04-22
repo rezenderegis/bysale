@@ -1,0 +1,154 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+     <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" 
+        
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor Restante"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/subTotalPagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+       
+
+
+    </TableRow>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" 
+        />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" 
+        
+        >
+   
+
+       
+
+   
+
+    </TableRow>
+     
+    
+   
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forma de Pagamento"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data" />
+
+      
+
+    </TableRow>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+     <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        >
+
+            <Spinner 
+           android:id="@+id/forma_pagamento"
+           android:layout_width="155dip"
+           android:layout_height="30dp"
+           
+           />
+
+      <Button 
+      android:id="@+id/data_pagamento"
+    android:layout_width="20dip" 
+    android:background="@drawable/icon_calendar"
+    android:layout_height="30dip"
+    />
+
+    
+
+      <TextView
+          android:id="@+id/data_pagamento_informada"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            />
+
+    </TableRow>
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+     
+      <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+            <EditText
+            android:id="@+id/valor_pagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/valor_pagamento"
+     
+           />
+
+        <Button
+         android:id="@+id/adicionar_tipo_pagamento"
+         android:layout_width="20dip"
+         android:textSize="9dp"
+         android:layout_height="30dp"
+         android:layout_gravity="center_vertical"
+         android:background="#1E90FF"
+         android:text="@string/adicionar_tipo_pagamento"
+         android:textColor="#FFFFFF" 
+                     android:layout_span="3"
+         
+         />
+
+      
+
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+   
+	
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+
+</TableLayout>

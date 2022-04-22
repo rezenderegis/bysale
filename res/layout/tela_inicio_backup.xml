@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="fill_horizontal" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView05"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="#0b62b3"
+        android:padding="25dp"
+        android:text="@string/cadastrar_produto_inicio"
+        android:textColor="#fff"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_marginBottom="39dp"
+        android:background="#0b62b3"
+        android:padding="25dp"
+        android:text="@string/cadastrar_cliente_inicio"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView06"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="#0b62b3"
+        android:padding="25dp"
+        android:text="@string/cadastrar_categoria_inicio"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/textoDescricaoInicio"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/textoExplicativoInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/textoExplicativoInicio"
+        android:textSize="18sp" />
+ 
+</RelativeLayout>

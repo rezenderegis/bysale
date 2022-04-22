@@ -1,0 +1,176 @@
+package com.sale.cadastro.task;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import com.sale.cadastro.ListaPessoas;
+import com.sale.cadastro.TelaInicioActivity;
+import com.sale.cadastro.util.Constantes;
+import com.sale.cadastro.util.PessoaConveter;
+import com.sale.cadastro.util.WebClient;
+import com.sale.dao.SaleDAO;
+import com.sale.login.Usuario;
+import com.sale.modelo.Pessoa;
+
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.widget.Toast;
+
+//USA O CONCEITO DE GENERICS
+public class BaixarDadosClientes_bkp extends AsyncTask<Integer, Double, String> {
+
+	private Activity context;
+	private ProgressDialog progress;
+
+	public BaixarDadosClientes_bkp(Activity context) {
+		// TODO Auto-generated constructor stub
+		this.context = context;
+
+	}
+
+	@Override
+	protected void onPreExecute() {
+		// TODO Auto-generated method stub
+		// mostrar um componente visual
+
+		// O primeiro true informa que pode ser enviado por tempo indeterminado
+		// e o segundo, que pode ser cancelado.
+		progress = ProgressDialog.show(context, "Aguarde", "Sincronizando",
+				true, true);
+
+	}
+
+	@Override
+	protected String doInBackground(Integer... params) {
+		// TODO Auto-generated method stub
+		// O TIPO MAIS IMPORTANTE � A STRING, QUE �O RETORNO DA TAREFA PESADA
+
+		// ENVIAR OS ALUNOS ATRAVPES DA CLASSE QUE FAZ REQUISI��O HTTP
+
+		// FAZER A CONVERS�O DO ALUNO EM JSON PARA OBTER A RESPOSTA E IMPRIMIR
+		// NA TELA
+		// String urlServer = "http://www.caelum.com.br/mobile";
+
+		String urlServer = Constantes.ENDERECO
+				+ "/mysale/app/sincronizar_produtos.php";
+		// String urlServer = "http://192.168.0.9/mysale/app/android.php";
+		SaleDAO dao = new SaleDAO(context);
+		List<Usuario> usuario = dao.getDadosUsuario();
+		String tipo = "cliente";
+		String dadosUsuario = new PessoaConveter().toJsonUsuario(usuario, tipo);
+		WebClient usuarioPost = new WebClient(urlServer);
+
+		final String respostaJSONVendaCliente = usuarioPost.post(dadosUsuario);
+		String resposta = null;
+		String nome = null;
+		String idpessoa = null;
+		String email = null;
+		String endereco = null;
+		String telefone = null;
+		String site = null;
+		try {
+			String result = respostaJSONVendaCliente;
+			// CONVERT RESPONSE STRING TO JSON ARRAY
+			// JSONObject jsonObject = new JSONObject(result);
+
+			JSONObject obj = new JSONObject(result);
+
+			// PRODUTOS
+			JSONArray jsonArray = obj.getJSONArray("produtos");
+
+			int length = jsonArray.length();
+			String[] cities = new String[length];
+
+			if (length > 0) {
+				for (int i = 0; i < length; i++) {
+
+					JSONObject oneObject = jsonArray.getJSONObject(i);
+					idpessoa = oneObject.getString("idpessoa");
+					nome = oneObject.getString("nome");
+					email = oneObject.getString("email");
+					endereco = oneObject.getString("endereco");
+					telefone = oneObject.getString("telefone");
+					site = oneObject.getString("site");
+
+					cities[i] = jsonArray.getString(i);
+
+				}
+			}
+
+			List<Pessoa> pessoas = new ArrayList<Pessoa>();
+
+			for (int i = 0; i < cities.length; i++) {
+
+				Pessoa pessoa = new Pessoa();
+				JSONObject oneObject = jsonArray.getJSONObject(i);
+				pessoa.setId(oneObject.getString("idpessoa"));
+				pessoa.setNome(oneObject.getString("nome"));
+				pessoa.setEmail(oneObject.getString("email"));
+				pessoa.setEndereco(oneObject.getString("endereco"));
+				pessoa.setTelefone(oneObject.getString("telefone"));
+				pessoa.setSite(oneObject.getString("site"));
+
+				pessoas.add(pessoa);
+
+			}
+
+			dao.salvaPessoasDoSite(pessoas);
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// /["{\"usuario\":{\"acesso\":\"T\",\"empresa\":1}}"]
+		// {"acesso":"F","empresa":1,"idusuario":2}
+		//
+
+		// AGORA S� FALTA AJUSTAR O APLICATIVO, O WEB SERVICE J� EST�
+		// COMUNICANDO
+
+		return resposta;
+
+	}
+
+	// }
+
+	@Override
+	// TUDO QUE EST� NO onPostExecute � executado pela thread da UI
+	protected void onPostExecute(String result) {
+		// TODO Auto-generated method stub
+		progress.dismiss();// FAZENDO O PROGRESS PARAR NO FINAL DA CHAMADA
+
+		SaleDAO daoNovo = new SaleDAO(context);
+
+		Boolean existe_cliente_no_dispositivo = daoNovo
+				.existe_cliente_no_dispositivo();
+
+		Boolean existe_categoria_no_dispositivo = daoNovo
+				.existe_categoria_no_dispositivo();
+
+		Boolean existe_produto_no_dispositivo = daoNovo
+				.existe_produto_no_dispositivo();
+
+		if (existe_cliente_no_dispositivo == false
+				&& existe_categoria_no_dispositivo == false
+				&& existe_produto_no_dispositivo == false) {
+			context.startActivity(new Intent(context, TelaInicioActivity.class));
+
+		} else {
+			context.startActivity(new Intent(context, ListaPessoas.class));
+
+		}
+		Toast.makeText(context, result, Toast.LENGTH_LONG).show();
+
+		// Baixar dados das categorias
+		BaixarDadosCategoria taskCategoria = new BaixarDadosCategoria(context);
+		taskCategoria.execute();
+
+	}
+
+}

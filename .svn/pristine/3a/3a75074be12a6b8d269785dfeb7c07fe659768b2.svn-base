@@ -1,0 +1,63 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 
+    <item
+        android:id="@+id/menu_novo"
+        android:icon="@drawable/ic_novo"
+        android:showAsAction="always"
+        android:title="@string/novo"/>
+ -->
+    
+     <item
+         		
+                android:id="@+id/enviar_clientes"
+                android:icon="@drawable/icons_sincronizar"
+                android:showAsAction="always"
+                android:title="@string/sincronizar"
+                />
+    
+    <!-- TRES PONTOS -->
+     
+    <item 
+        android:icon="@drawable/tres_pontos"
+        android:showAsAction="always"
+        android:title="@string/mais_op_es">
+ 
+        <menu>   
+            
+             <item
+             android:id="@+id/enviar_cadastros_servidor"
+                android:icon="@drawable/icons_enviar"
+                android:showAsAction="always"
+                android:title="@string/enviar_cadastros_servidor"/>
+            
+            
+               
+       			
+                 
+               <item
+                android:id="@+id/baixar_clientes"
+                android:icon="@drawable/icons_baixar"
+                android:showAsAction="always"
+                android:title="@string/baixar_dados_servidor"/>
+            
+           		
+                 <item 
+                     android:id="@+id/mudarUsuario"
+                     android:icon="@drawable/icons_mudar_usuario"
+                     android:showAsAction="always"
+                     android:title="@string/mudarUsuario"
+                     
+                     />
+                 
+                        <item
+                android:id="@+id/bloquear_tela"
+                android:icon="@drawable/icons_lock"
+                android:showAsAction="always"
+                android:title="@string/bloquear_tela"/>
+                 
+        </menu>
+    </item>
+    
+    
+      
+</menu>

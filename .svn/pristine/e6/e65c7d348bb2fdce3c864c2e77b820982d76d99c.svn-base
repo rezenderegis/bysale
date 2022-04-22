@@ -1,0 +1,64 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    >
+
+    <item
+        android:id="@+id/menu_novo"
+        android:icon="@drawable/ic_novo"
+        android:showAsAction="always"
+        android:title="@string/novo"/>
+
+    <item
+        android:icon="@drawable/ic_opcoes"
+        android:showAsAction="always"
+        android:title="@string/mais_op_es">
+        
+        <menu>
+            <item
+                android:id="@+id/cadastrar_produto"
+                android:icon="@drawable/ic_receber"
+                android:showAsAction="always"
+                android:title="@string/cadastrar_produto"/>
+            
+           
+            <item
+                android:id="@+id/enviar_clientes"
+                android:icon="@drawable/icons_add_men"
+                android:showAsAction="always"
+                android:title="@string/sincronizar"/>
+       			
+                   <item
+                android:id="@+id/baixar_dados"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/baixar_dados"/>
+               
+               <item
+                android:id="@+id/baixar_clientes"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/baixar_dados_servidor"/>
+            
+           		 <item
+                android:id="@+id/baixar_categorias"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/baixar_categorias"/>
+           		 
+           		 
+                 <item 
+                     android:id="@+id/mudarUsuario"
+                     android:icon="@drawable/ic_enviar"
+                     android:showAsAction="always"
+                     android:title="@string/mudarUsuario"
+                     
+                     />
+                 
+                        <item
+                android:id="@+id/bloquear_tela"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/bloquear_tela"/>
+                 
+        </menu>
+    </item>
+</menu>

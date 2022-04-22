@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="borda_imagem">#FFFFFF</color>
+    <color name="linha_par">#FFFAFA</color>
+    <color name="linha_impar">#FFFFFF</color>
+    <color name="fundo_tab">#FFFFE0</color>
+    <color name="actionbar_tabs">#FFFFE0</color>
+    <color name="botao_picker">#1E90FF</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza">#808080</color>
+    <color name="cinza_claro">#E0E0E0 </color>
+    <color name="preto">#000000</color>
+        <color name="fundo_azul_escuro">#2E3191</color>
+    <color name="cinza_ld">#706f6f</color>
+     <color name="cabecalho_tabelas">#1E90FF</color>
+     <color name="texto_cabecalho_tabels">#FFFFFF</color>
+     <color name="vermelho_cliente_nao_aprovado">#E40733</color>
+     <color name="azul_aguardando_aprovacao">#0198D2</color>
+     
+     
+</resources>
+
+<!-- 
+Azul Claro Action Bar: #1E90FF
+Vermelho Logo: #c31034
+Cinza Action Bar: #484848
+Azul caixa: #2D4484
+Amarelo: #EEEED1
+Amarelo: #FFFFE0
+Snow: #FFFAFA
+Lavander: #E6E6FA
+Azul: #B0E2FF
+Azul: #A4D3EE
+ -->

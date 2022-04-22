@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/margens_formularios" >
+
+     <TableLayout 
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TableRow 
+         android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+       
+        >  
+     <TextView 
+         	
+             android:gravity="center"
+            android:layout_weight="2" 
+            android:layout_width="fill_parent"
+            android:text="Cadastro de Cliente"
+         android:background="@color/cabecalho_tabelas"
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+            />  
+    
+   
+ 
+    </TableRow> 
+     
+  
+    
+     
+</TableLayout>
+    
+    
+    
+            <ImageView 
+        android:src="@drawable/icons_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/foto"
+        android:layout_gravity="center"
+        style="@style/fonte_formularios"
+        />
+    
+         
+    <EditText
+        android:id="@+id/nome"
+        android:hint="Nome"
+         android:inputType="textPersonName|textCapWords" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+                	style="@style/fonte_formularios"
+        
+       >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/cpf_cnpj"
+        android:hint="CPF ou CNPJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/fonte_formularios" />
+    
+    <EditText
+        android:id="@+id/e_mail"
+        android:hint="E-mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/fonte_formularios"
+        
+         />
+    
+    <EditText
+        android:id="@+id/site"
+        android:hint="Site"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+                	style="@style/fonte_formularios"
+        
+         />
+
+    <EditText
+        android:id="@+id/telefone"
+        android:hint="Telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" 
+                	style="@style/fonte_formularios"
+        />
+
+    <EditText
+        android:id="@+id/endereco"
+        android:hint="Endereço"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textPersonName"
+        style="@style/fonte_formularios"
+        />
+
+    <EditText
+        android:id="@+id/observacao"
+        android:hint="Observação"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:ems="10" 
+        android:inputType="text|textMultiLine"
+        style="@style/fonte_formularios"
+        />
+    
+   <!-- 
+    <RatingBar
+        android:id="@+id/nota"
+        android:numStars="5"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+ -->
+    <Button
+        android:id="@+id/botao"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/botao_picker"
+        android:textColor="@color/branco"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/salvar" 
+        />
+    
+</LinearLayout>

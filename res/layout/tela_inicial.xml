@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dip"
+    android:background="@drawable/garconete"
+    android:gravity="top" >
+
+
+    
+    <Button
+        android:id="@+id/fazer_login_tela_inicial"
+        android:layout_width="143dip"
+        android:layout_height="45dip"
+        android:background="#1E90FF"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="10dip"/>
+
+    <Button
+        android:id="@+id/cadastrar_usuario_tela_inicial"
+        android:layout_width="143dip"
+        android:layout_height="45dip"
+        android:layout_toRightOf="@+id/fazer_login_tela_inicial"  
+       android:layout_marginLeft="15dp"
+        android:background="#1E90FF"
+        android:text="@string/cadastrar"
+        android:textColor="#FFFFFF" 
+                android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="400dip"
+        android:layout_height="200dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="31dp"
+        android:gravity="center"
+        android:shadowColor="#707070"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:text="@string/texto_descricao"
+        android:textColor="#FFFFFF"
+        android:textSize="19pt" />
+
+</RelativeLayout>

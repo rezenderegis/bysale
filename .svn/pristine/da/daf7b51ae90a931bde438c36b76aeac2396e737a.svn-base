@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent" 
+android:background="@color/branco">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pedidos" 
+            android:background="@color/branco"
+            android:layout_marginTop="20sp"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_clientes" 
+            android:background="@color/branco"
+             android:layout_marginTop="20sp"/>
+
+    </TableRow>
+
+    
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+    
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pedidos"
+           android:gravity="center"
+                android:textSize="20dp" 
+        android:textColor="@color/fundo_azul_escuro"
+           />
+
+                <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clientes"
+            android:gravity="center"
+                 android:textSize="20dp" 
+        android:textColor="@color/fundo_azul_escuro"/>
+        
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_relatorio"
+            android:background="@color/branco" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_adicionar_produto" 
+            android:background="@color/branco"/>
+    </TableRow>
+
+     <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+    
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relatórios"
+           android:gravity="center"
+                android:textSize="20dp" 
+        android:textColor="@color/fundo_azul_escuro"
+           />
+
+                <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Produtos"
+            android:gravity="center"
+                 android:textSize="20dp" 
+        android:textColor="@color/fundo_azul_escuro"/>
+        
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ImageButton
+            android:id="@+id/ImageButton01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_categoria" 
+            android:background="@color/branco"/>
+
+    </TableRow>
+
+     <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" >
+
+    
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Categorias"
+           android:gravity="center"
+                android:textSize="20dp" 
+        android:textColor="@color/fundo_azul_escuro"
+           />
+
+          
+
+    </TableRow>
+
+</TableLayout>
+
+</LinearLayout>

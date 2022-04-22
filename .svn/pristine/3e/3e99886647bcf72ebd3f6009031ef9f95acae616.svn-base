@@ -1,0 +1,38 @@
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    > 
+
+    
+     
+    <TableRow 
+        android:id="@+id/tableRow1" 
+        android:layout_height="2dp" 
+        android:layout_width="2dp">  
+        
+        <Button
+        android:id="@+id/desconto"
+        android:layout_width="143dip"
+        android:layout_height="45dip"
+        android:background="#1E90FF"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="10dip"/>
+
+    <Button
+        android:id="@+id/fechar_venda"
+        android:layout_width="143dip"
+        android:layout_height="45dip"
+        android:layout_toRightOf="@+id/fazer_login_tela_inicial"  
+       android:layout_marginLeft="15dp"
+        android:background="#1E90FF"
+        android:text="@string/cadastrar"
+        android:textColor="#FFFFFF" 
+                android:layout_marginTop="10dp" />
+    
+    
+            </TableRow> 
+     
+</TableLayout>

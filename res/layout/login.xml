@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dip"
+    android:background="@color/cinza_ld"
+    android:gravity="top" >
+    
+   
+
+    <EditText
+        android:id="@+id/et_un"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/et_pw"
+      
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/e_mail"
+        android:dividerHeight="40.0sp"
+        android:inputType="text" 
+        android:layout_marginTop="15dp"
+        />
+
+    
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_un"
+        android:layout_marginLeft="10dip"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/senha"
+         android:dividerHeight="40.0sp"
+        
+        android:inputType="textPassword" />
+
+     <Button
+         android:id="@+id/btn_login"
+         android:layout_width="143dip"
+         android:layout_height="45dip"
+       android:layout_below="@id/et_pw"
+       android:layout_centerHorizontal="true"
+         android:background="#1E90FF"
+         android:text="@string/login"
+         android:textColor="#FFFFFF" 
+                  android:dividerHeight="40.0sp"
+         
+         />
+<TextView android:id="@+id/link_esqueceu_senha"
+    android:layout_width="143dp"
+    android:layout_height="45dip"
+    android:text="Esqueceu a senha?"
+    android:textColor="#FFFFFF"
+    android:layout_below="@id/btn_login"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dip"/>
+
+<TextView android:id="@+id/link_cadastrese"
+    android:layout_width="143dp"
+    android:layout_height="45dip"
+    android:text="Cadastre-se"
+    android:textColor="#FFFFFF"
+    android:layout_below="@id/btn_login"
+    android:layout_marginTop="15dp"
+    android:layout_toRightOf="@id/link_esqueceu_senha"
+    android:gravity="right"/>
+</RelativeLayout>

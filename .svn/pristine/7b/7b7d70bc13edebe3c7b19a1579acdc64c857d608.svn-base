@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+
+    <item
+        android:icon="@drawable/ic_opcoes"
+        android:showAsAction="always"
+        android:title="@string/mais_op_es"
+        
+        >
+        
+        <menu>        
+            <item
+               
+                android:id="@+id/sincronizar_dados_empresa"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/sincronizar_dados_empresa"/>
+                <item
+                android:id="@+id/enviar_clientes"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/sincronizar"/>
+       			
+                   <item
+                android:id="@+id/baixar_dados"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/baixar_dados"/>
+               
+               <item
+                android:id="@+id/baixar_clientes"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/baixar_dados_servidor"/>
+            
+           		 <item
+                android:id="@+id/baixar_categorias"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/baixar_categorias"/>
+           		 
+                 <item 
+                     android:id="@+id/mudarUsuario"
+                     android:icon="@drawable/ic_enviar"
+                     android:showAsAction="always"
+                     android:title="@string/mudarUsuario"
+                     
+                     />
+                 
+                        <item
+                android:id="@+id/bloquear_tela"
+                android:icon="@drawable/ic_enviar"
+                android:showAsAction="always"
+                android:title="@string/bloquear_tela"/>
+                 
+        </menu>
+    </item>
+</menu>

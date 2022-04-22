@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="480dip"
+    android:layout_marginTop="5dip"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:background="@color/branco"
+android:orientation="vertical"
+     >
+
+  
+
+     <Button
+        android:id="@+id/botao_relatorio_vendas"
+        android:layout_width="170dip"
+        android:layout_height="45dip"
+        android:background="#1E90FF"
+        android:text="Relatório de Pedidos"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+       android:layout_marginTop="10dp" 
+          android:layout_marginLeft="10dip"
+        android:layout_marginBottom="5dip"/>
+         
+
+   <Button
+        android:id="@+id/botao_relatorio_pagamentos"
+        android:layout_width="170dip"
+        android:layout_height="45dip"
+        android:background="#1E90FF"
+        android:text="Relatório de Pagamentos"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+       android:layout_marginTop="10dp" 
+          android:layout_marginLeft="10dip"
+        android:layout_marginBottom="5dip"/>
+         
+    
+  
+
+</LinearLayout>

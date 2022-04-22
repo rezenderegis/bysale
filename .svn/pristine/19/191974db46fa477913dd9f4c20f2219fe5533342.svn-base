@@ -1,0 +1,105 @@
+<resources>
+
+    <string name="app_name">BySale</string>
+    <string name="mapa">Mapa</string>
+    <string name="editar_pessoa">Editar Cliente</string>
+    <string name="novo">Cadastar Cliente</string>
+    <string name="principal">Principal</string>
+    <string name="sincronizar">Enviar Vendas ao Servidor</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="mais_op_es">Cadastros</string>
+    <string name="baixar_provas">Baixar Dados</string>
+    <string name="show_prompt_dialog">Show Prompt Dialog</string>
+    <string name="produto">Produto</string>
+    <string name="gravar">Salvar</string>
+    <string name="nome_do_produto">Nome do Produto</string>
+    <string name="fornecedor_do_produto">Fornecedor do Produto</string>
+    <string name="cadastrar_produto">Cadastrar Produto</string>
+    <string name="btn_login">Login</string>
+    <string name="bloquear_tela">Bloquear Tela</string>
+    <string name="baixar_dados">Baixar Produtos</string>
+    <string name="baixar_dados_servidor">Baixar Dados do Servidor</string>
+    <string name="mudarUsuario">Trocar de Usuário</string>
+    <string name="baixar_categorias">Baixar Categorias</string>
+    <string name="e_mail">E-mail</string>
+    <string name="e_mail_confirmacao">Repita o e-mail</string>
+    <string name="senha_confirmacao">Repita a senha</string>
+    <string name="senha">Senha</string>
+    <string name="texto_descricao">Transforme a gestão das suas vendas</string>
+    <string name="login">Entrar</string>
+    <string name="cadastrar">Cadastre-se</string>
+    <string name="sincronizar_dados_empresa">Sincronizar Dados</string>
+    <string name="mensagemBloquear">A tela do sistema será bloqueada. Deseja continuar?</string>
+    <string name="totalVenda">totalVenda</string>
+    <string name="total">Total: R$ </string>
+    <string name="cadastrar_categoria">Cadastrar Categoria</string>
+    <string name="nome_categoria">Nome da Categoria</string>
+    <string name="categorias_cadastradas_titulo">Categorias</string>
+    <string name="produtos_cadastrados_titulo">Produtos</string>
+    <string name="combo_categoria_produto">Categoria do Produto</string>
+    <string name="enviar_cadastros_servidor">Enviar Dados Servidor</string>
+    <string name="textoDescricaoInicio">Começe a Transformação</string>
+    <string name="cadastrar_produto_inicio">3 - Cadastrar Produto</string>
+    <string name="cadastrar_categoria_inicio">2 - Cadastrar Categoria de Produto</string>
+    <string name="cadastrar_cliente_inicio">1 - Cadastrar Cliente</string>
+    <string name="textoExplicativoInicio">Siga os passos abaixo para ativar seu aplicativo.</string>
+    <string name="textoInstrucao">Após seguir esses passos, os clientes serão mostrados na tela inicial. 
+                         Para efetuar uma venda, clique no cliente e selecione o produto.</string>
+    <string name="salvar">Salvar</string>
+    <string name="titulo_action_bar_inclusao_produto">Inclusão de Produto na Venda</string>
+    <string name="nome">Nome</string>
+    <string name="criar_nova_conta">Criar Nova Conta</string>
+    <string name="data_pagamento">D</string>
+    <string name="valor_pagamento">Valor</string>
+    <string name="valor_desconto">Desconto</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="data_informada">Data</string>
+    <string name="adicionar_tipo_pagamento">Adicionar</string>
+    <string name="botao_fechar_venda">Forma de Pagamento</string>
+    <string name="botao_desconto">Desconto</string>
+    <string name="botao_confirmar_fechamento">Emitir Pedido</string>
+    <string name="botao_incluir_forma_pagamento">Adicionar</string>
+    <string name="botao_incluir_produto_venda">Incluir Produtos</string>
+    <string name="data_venda">Data Venda: </string>
+    <string name="data_inicial">Data Inicial</string>
+    <string name="data_final">Data Final</string>
+    <string name="botao_buscar_relatorio">Buscar</string>
+    <string name="botao_limpar_filtro_relatorio">Limpar Filtro</string>
+    <string name="valor_restante_pagar">Valor Restante</string>
+    <string name="texto_data_pagamento">Data</string>
+    <string name="texto_valor_pagamento">Valor</string>
+    <string name="mensagem_aguardando_analise">Não é possível abrir o pedido pois o cadastro do cliente ainda não foi analisado. 
+            Solicite ao seu gerente a análise do cadastro do cliente.</string>
+    <string name="mensagem_recusado">Não é possível abrir o pedido pois o cadastro do cliente foi recusado pela empresa. Fale com seu gestor.</string>
+    <string name="mensagem_impossivel_venda">Não é possível abrir o pedido pois o cadastro do cliente foi bloqueado pela empresa. </string>
+    <string name="entendido">Entendidio</string>
+    <string name="pedidos_fragment_em_orcamento">Em orçamento</string>
+    <string name="pedidos_fragment_emitidos">Emitidos</string>
+    <string name="lista_vendas_adapter_mensagem_informar_forma_pagamento">Informe o plano de pagamento no botão Forma Pagamento.</string>
+    <string name="lista_pagamentos_adapter_texto_nao_informado">Não informado</string>
+    <string name="lista_pagamentos_adapter_cartao_credito">Cartão de Crédito</string>
+    <string name="lista_pagamentos_adapter_dinheiro">Dinheiro</string>
+    <string name="lista_pagamentos_adapter_cheque">Cheque</string>
+    <string name="lista_pagamentos_adapter_boleto">Boleto</string>
+    <string name="lista_pessoas_editar_cadastro">Editar Cadastro</string>
+    <string name="lista_pessoas_ligar">Ligar</string>
+    <string name="listar_pessoas_enviar_sms">Enviar SMS</string>
+    <string name="listar_pessoas_ver_endereco">Ver Endereço</string>
+    <string name="listar_pessoas_enviar_email">Enviar E-mail</string>
+    <string name="listar_pessoas_ver_site">Ver Site</string>
+    <string name="listar_pessoas_deletar">Deletar</string>
+    <string name="listar_pessoas_assunto_email">Assunto</string>
+    <string name="listar_pessoas_corpo_email">Escreva o e-mail</string>
+        
+    
+    <!-- Strings dos Formulários -->
+    <string name="busca_relatorio_venda_string_tabela">Seleção de Critério de Pesquisa</string>
+    <string name="forma_pagamento_inclusao_restante_pagar">Restante a Pagar</string>
+    <string name="forma_pagamento_inclusao_forma_pagamento">Forma de Pagamento</string>
+    <string name="forma_pagamento_inclusao_data_pagamento">Data do Pagamento</string>
+    <string name="forma_pagamento_inclusao_valor_pagamento">Valor do Pagamento</string>
+    <string name="forma_pagamento_inclusao_dados_pagamento">Dados do Pagamento</string>
+    
+    
+    
+</resources>

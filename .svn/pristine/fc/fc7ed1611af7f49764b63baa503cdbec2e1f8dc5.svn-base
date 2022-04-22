@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+     <TextView
+        android:id="@+id/nomeproduto_relatoriovenda"
+        android:layout_width="20sp"
+        android:layout_height="2sp"
+        android:layout_below="@+id/total_relatoriovenda"
+       />
+    
+    
+     <TextView
+         android:id="@+id/preco_relatoriovenda"
+         android:layout_width="40sp"
+         android:layout_height="40sp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/nomeproduto_relatoriovenda"
+         android:layout_marginTop="40dp"
+         android:text="preco" />
+    
+         
+     <TextView
+         android:layout_width="40sp"
+         android:layout_height="40sp"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/total_relatoriovenda"
+         android:layout_marginTop="40dp"
+         android:text="preco" />
+    
+     
+</RelativeLayout>

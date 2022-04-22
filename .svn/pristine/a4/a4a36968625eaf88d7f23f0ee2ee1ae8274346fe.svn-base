@@ -1,0 +1,51 @@
+package com.sale.negocio;
+
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.List;
+import java.util.Locale;
+
+import android.content.Context;
+
+import com.sale.dao.SaleDAO;
+import com.sale.modelo.VendaCliente;
+
+public class NegocioUtil {
+
+	
+	
+	public Double valorDescontoVenda (Context context, Long idVendaClienteDaListaVendas) {
+		
+		Double totalDesconto = 0.0;
+		
+		SaleDAO dao = new SaleDAO(context);
+		List<VendaCliente> dadosVendaCliente = dao.getListaVendaCliente(
+				idVendaClienteDaListaVendas, null);
+		
+		Integer situacao_venda = 0;
+		for (VendaCliente vendaCliente : dadosVendaCliente) {
+			if (vendaCliente.getDescontoVenda() != null) {
+				totalDesconto = vendaCliente.getDescontoVenda();
+			}
+			situacao_venda = vendaCliente.getSituacaovenda();
+		}
+
+		
+		return totalDesconto;
+	}
+	
+	
+	public Double calcularValorRestanteNaFormaPagamento (Double precoTotalVenda, Double totalDesconto, Double totalPagamento) {
+	
+		 Double calculoValorRestante;
+
+		// totalDesconto;
+		Double valorDesconto = precoTotalVenda * totalDesconto / 100;
+		calculoValorRestante = precoTotalVenda - totalPagamento - valorDesconto;
+		
+		return calculoValorRestante;
+		
+	}
+
+}

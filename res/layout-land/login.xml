@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="510dip"
+    android:layout_marginTop="10dip"
+    android:background="#FFFFFF"
+    android:gravity="top" >
+
+    <TextView
+        android:id="@+id/tv_un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:text=""
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_un"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="15dip"
+        android:text=""
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/et_un"
+        android:layout_width="150dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/tv_un"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:dividerHeight="40.0sp"
+        android:ems="10"
+        android:hint="@string/e_mail"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="150dip"
+        android:layout_height="45dip"
+        android:layout_alignLeft="@+id/tv_un"
+        android:layout_below="@+id/et_un"
+        android:layout_marginLeft="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:dividerHeight="40.0sp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="85dip"
+        android:layout_height="40dip"
+        android:layout_above="@+id/tv_error"
+        android:layout_alignLeft="@+id/btn_login"
+        android:background="#1E90FF"
+        android:text="@string/cadastrar"
+        android:textColor="#FFFFFF" />
+
+    
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="85dip"
+        android:layout_height="40dip"
+        android:layout_alignBaseline="@+id/et_un"
+        android:layout_alignBottom="@+id/et_un"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/et_un"
+        android:background="#1E90FF"
+        android:text="@string/login"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="400dip"
+        android:layout_height="50dip"
+        android:layout_alignLeft="@+id/et_pw"
+        android:layout_below="@+id/et_pw"
+     	android:dividerHeight="100.0sp"
+     	     android:ems="10"
+        android:text="@string/texto_descricao"
+        android:textColor="#A020F0"
+        android:textSize="11pt" />
+
+</RelativeLayout>

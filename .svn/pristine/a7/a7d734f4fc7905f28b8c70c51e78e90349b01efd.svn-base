@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    style="@style/margens_formularios">
+    
+     <TableLayout 
+       android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <TableRow 
+         android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+       
+        >  
+     <TextView 
+         	
+             android:gravity="center"
+            android:layout_weight="2" 
+            android:layout_width="fill_parent"
+            android:text="Dados da Categoria"
+         android:background="@color/cabecalho_tabelas"
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+            />  
+    
+   
+ 
+    </TableRow> 
+     
+  
+    
+     
+</TableLayout>
+    
+    
+    <EditText 
+        android:id="@+id/categoria_produto"
+        android:hint="@string/nome_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName|textCapWords"
+        style="@style/fonte_formularios"/>
+    
+    <Button 
+        android:id="@+id/botao_salva_categoria_produto"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/botao_picker"
+        android:textColor="@color/branco"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/salvar" />
+        
+    
+
+</LinearLayout>

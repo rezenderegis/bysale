@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fundo"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <!-- android:background="@color/linha_impar" -->
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+          android:contentDescription="desc"
+        android:background="@color/borda_imagem"
+        android:paddingLeft="10dp" 
+        android:paddingRight="10dp"/>
+
+    
+        <TextView
+        android:id="@id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/foto"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/foto"
+        android:text="Nome"
+        
+        android:textStyle="bold"
+                    style="@style/estilo_tabelas"
+         />
+     
+
+   
+
+
+</RelativeLayout>

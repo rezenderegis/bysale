@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     
+     <TextView
+        android:id="@+id/TextView01"
+        android:background="#0b62b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"
+        android:text="view topContent"
+        android:textColor="#fff"
+        tools:context=".MainActivity" />
+ 
+    <TextView
+        android:id="@+id/TextView02"
+        android:background="#0b62b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/TextView03"
+        android:padding="25dp"
+        android:text="Cadastro de Clientes"
+        android:textColor="#fff"  />
+     
+    <TextView 
+        android:id="@+id/TextView03"
+        android:background="#f00" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="25dp"
+        android:text="view second" 
+        android:textColor="#000" />
+     
+    <TextView
+        android:id="@+id/TextView04"
+        android:background="#0b62b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/TextView03"
+        android:padding="25dp"
+        android:text="view third"
+        android:textColor="#fff" />
+     
+    <TextView
+        android:id="@+id/TextView05"
+        android:background="#0b62b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"
+        android:text="view bottomContent"
+        android:textColor="#fff" />
+ 
+</RelativeLayout>

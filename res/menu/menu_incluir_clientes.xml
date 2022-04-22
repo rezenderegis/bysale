@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">    
+                <item
+        android:id="@+id/menu_novo"
+        android:icon="@drawable/icons_add_men_branco"
+        android:showAsAction="always"
+        android:title="@string/novo"/>  
+</menu>

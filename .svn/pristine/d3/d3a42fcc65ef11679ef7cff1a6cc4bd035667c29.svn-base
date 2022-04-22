@@ -1,0 +1,266 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:shrinkColumns="*"
+    android:stretchColumns="*" 
+    android:layout_marginTop="10sp"
+>
+<TableRow
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">  
+    
+    
+      <TextView 
+             android:gravity="center"
+            android:layout_weight="2" 
+            android:layout_width="6dp"
+           
+                android:text="Resumo do Pagamento"
+         android:background="@color/cabecalho_tabelas"
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+            />
+    </TableRow>
+    <TableRow 
+        android:id="@+id/tableRow2" 
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        >  
+
+                 <TextView
+                     android:text="Valor Pago" 
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+             android:gravity="left"
+           
+           
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+         <TextView 
+             android:id="@+id/valor_pago"
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="right"
+           
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+        
+    </TableRow>
+    
+    <TableRow 
+        android:id="@+id/tableRow1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+            android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">  
+
+                 <TextView
+                     android:text="Valor da Compra" 
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+             android:gravity="left"
+           
+    
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+         <TextView 
+             android:id="@+id/valor_compra"
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="right"
+           
+    
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+        
+    </TableRow>
+    
+    <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+            android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">  
+
+                 <TextView
+                     android:text="Desconto" 
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+           android:gravity="left"
+          
+   
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+         <TextView 
+             android:id="@+id/desconto_informado"
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="right"
+           
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+        
+    </TableRow>
+    
+     <TableRow 
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+            android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">  
+
+                 <TextView
+                     android:text="Valor Desconto" 
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="left"
+           
+             
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+         <TextView 
+             android:id="@+id/valor_desconto"
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+             android:gravity="right"
+          
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+        
+    </TableRow>
+    
+
+
+   <TableRow 
+        android:id="@+id/tableRow3" 
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+            android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        >  
+
+                 <TextView
+                     android:text="Restante" 
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+           android:gravity="left"
+            
+      
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+         <TextView 
+             android:id="@+id/valor_restante"
+            android:layout_weight="1" 
+                        android:layout_width="2dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+             android:gravity="right"
+            
+            android:layout_marginTop="2px"
+            android:background="@drawable/cell_sahpe"
+                        style="@style/estilo_tabelas"
+            />
+        
+    </TableRow>
+
+   <TableRow
+       android:layout_width="2dp"
+       android:layout_height="2dp" 
+           android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp">
+
+       <Button
+           android:id="@+id/incluir_desconto"
+           android:layout_width="143dip"
+           android:layout_height="45dip"
+           android:layout_marginTop="5sp"
+           android:background="#1E90FF"
+           android:text="@string/botao_desconto"
+           android:textColor="#FFFFFF" 
+           android:layout_marginBottom="5sp"
+           android:textSize="12sp"
+           
+           />
+
+       <Button
+           android:id="@+id/incluir_novas_formas_pagamento"
+           android:layout_width="143dip"
+           android:layout_height="45dip"
+           android:layout_marginLeft="5sp"
+           android:layout_marginTop="5sp"
+           android:background="#1E90FF"
+           android:text="@string/botao_incluir_forma_pagamento"
+           android:textColor="#FFFFFF" 
+           android:layout_marginBottom="5sp"
+			           android:textSize="12sp"
+			           
+           />
+
+       <Button
+           android:id="@+id/confirmar_fechamento"
+           android:layout_width="143dip"
+           android:layout_height="45dip"
+        
+           android:layout_marginTop="5sp"
+           android:layout_marginRight="5sp"
+           android:layout_marginLeft="5sp"
+           android:background="#1E90FF"
+           android:text="@string/botao_confirmar_fechamento"
+           android:textColor="#FFFFFF"
+           android:layout_marginBottom="5sp"
+			           android:textSize="12sp"
+			           
+           />
+
+   </TableRow>
+   
+</TableLayout>
+
+
+
+
+
+
+
+
+

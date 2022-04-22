@@ -1,0 +1,36 @@
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:background="@drawable/cell_sahpe"
+    android:layout_marginTop="40dip"
+    
+    > 
+
+    <TableRow 
+        android:id="@+id/tableRow1" 
+        android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+         android:background="@drawable/cell_sahpe">  
+        <TextView 
+            android:id="@+id/nomeproduto_adapter"
+            android:layout_weight="2" 
+            android:layout_width="4dp"
+ 			android:gravity="left"
+            android:textColor="#000000"
+           style="@style/estilo_tabelas"
+            />  
+          
+        <TextView 
+             android:id="@+id/preco_produto_adapter"
+            android:layout_weight="1" 
+            android:layout_width="80sp"
+		 	android:gravity="right"
+            android:textColor="#000000"
+            style="@style/estilo_tabelas"
+            />
+
+    </TableRow> 
+    
+     
+</TableLayout>

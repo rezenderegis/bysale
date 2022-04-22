@@ -1,0 +1,42 @@
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    > 
+
+    <TableRow 
+        android:id="@+id/tableRow1" 
+        android:layout_height="2dp" 
+        android:layout_width="2dp">  
+        <TextView 
+           android:text="Valor"
+            android:layout_weight="1" 
+            android:layout_width="1dp"
+             android:gravity="center"
+                         style="@style/estilo_tabelas"
+             />  
+             
+ <TextView 
+                android:text="Data Pagamento"
+     
+            android:layout_weight="1" 
+            android:layout_width="1dp"
+            android:gravity="center"
+                        style="@style/estilo_tabelas"
+            />  
+ <TextView 
+            android:text="Forma Pagamento"
+           
+            android:layout_weight="1" 
+            android:layout_width="1dp"
+            android:gravity="center"
+                        style="@style/estilo_tabelas"
+            />  
+ 
+ 
+ 
+    </TableRow> 
+     
+    
+     
+</TableLayout>

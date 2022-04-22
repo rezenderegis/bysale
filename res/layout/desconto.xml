@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+         
+    <EditText
+        android:id="@+id/valor_desconto"
+        android:hint="Desconto"
+         android:inputType="numberDecimal" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+                
+       >
+
+        <requestFocus />
+    </EditText>
+<!-- 
+    <Button
+        android:id="@+id/botao_desconto"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/botao_picker"
+        android:textColor="@color/branco"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/salvar" 
+        />
+     -->
+     
+     
+</LinearLayout>

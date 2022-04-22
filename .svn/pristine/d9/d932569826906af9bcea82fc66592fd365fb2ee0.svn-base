@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="480dip"
+    android:layout_marginTop="0dip"
+    android:gravity="fill_horizontal" 
+    
+     >
+
+    <Button
+        android:id="@+id/botao1_tela_inicio"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botao2_tela_inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="#0b62b3"
+        android:padding="25dp"
+        android:text="@string/cadastrar_cliente_inicio"
+        android:textColor="#fff"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/botao2_tela_inicio"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/botao3_tela_inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="#0b62b3"
+        android:padding="25dp"
+        android:text="@string/cadastrar_categoria_inicio"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/botao2_tela_inicio"
+        android:layout_alignParentTop="true"
+        android:text="@string/textoDescricaoInicio"
+           android:layout_gravity="center_vertical|left"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/botao3_tela_inicio"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/botao1_tela_inicio"
+        android:layout_marginBottom="52dp"
+        android:background="#0b62b3"
+        android:padding="25dp"
+        android:text="@string/cadastrar_produto_inicio"
+           android:layout_gravity="center_vertical|right"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textoExplicativoInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView02"
+        android:text="@string/textoExplicativoInicio"
+        android:textSize="13sp" />
+<!--  
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textoExplicativoInicio"
+        android:layout_centerHorizontal="true"
+        android:text="@string/textoInstrucao"
+        android:textSize="13sp" />
+-->
+</RelativeLayout>

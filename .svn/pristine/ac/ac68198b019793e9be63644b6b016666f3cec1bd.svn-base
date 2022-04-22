@@ -1,0 +1,105 @@
+<TableLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+       android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ android:shrinkColumns="*"
+    android:stretchColumns="*" 
+     android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="@drawable/cell_sahpe">
+
+
+    <TableRow 
+         android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+       
+        >  
+     <TextView 
+             android:gravity="center"
+            android:layout_weight="3" 
+            android:layout_width="6dp"
+            
+                android:text="Frm. Pg"
+         android:background="@color/cabecalho_tabelas"
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+            />  
+    
+       
+ <TextView 
+            
+            android:gravity="center"
+            android:layout_weight="2" 
+            android:layout_width="50sp"
+           android:text="Data"
+           android:background="@color/cabecalho_tabelas"
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+            />  
+ 
+  <TextView 
+            android:gravity="left"
+            
+         
+            android:layout_weight="2" 
+            android:layout_width="40sp"
+                android:text="Valor"
+             android:background="@color/cabecalho_tabelas"
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+             />  
+             
+ 
+    </TableRow> 
+     
+  
+    <TableRow 
+         android:layout_height="wrap_content" 
+        android:layout_width="2dp"
+     
+        >  
+     <TextView 
+             android:gravity="center"
+            android:layout_weight="3" 
+            android:layout_width="6dp"
+            android:layout_span="2"
+                android:text="Não informado"
+             android:textColor="#000000"
+                         style="@style/estilo_tabelas"
+             
+            />  
+    
+       
+ <TextView 
+            
+            android:gravity="center"
+            android:layout_weight="2" 
+            android:layout_width="50sp"
+           android:text=""
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+            />  
+ 
+  <TextView 
+            android:gravity="left"
+            
+         
+            android:layout_weight="2" 
+            android:layout_width="40sp"
+                android:text=""
+             android:textColor="@color/texto_cabecalho_tabels"
+                         style="@style/estilo_tabelas"
+             
+             />  
+             
+ 
+    </TableRow> 
+     
+    
+     
+</TableLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sale.cadastro"
+    android:versionCode="64"
+    android:versionName="2.4.2" 
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+    
+   <uses-permission android:name="com.android.vending.BILLING"/>
+    	 
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACTION_SEND" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	 <uses-permission android:name="android.permission.VIBRATE"/>
+	  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+	  	  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED">
+	  
+	      
+	  </uses-permission>
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name="com.sale.cadastro.ListaCategoriasProdutos" 
+            android:launchMode="singleTop"></activity>
+        
+                <activity android:name="com.sale.cadastro.ListaProdutosCadastradosActivity" 
+                    android:launchMode="singleTop"></activity>
+        
+    <activity android:name="com.sale.cadastro.TelaInicioActivity"></activity>     
+        <activity android:name="com.sale.cadastro.FormularioCategoriaActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.cadastro.Formulario"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.cadastro.PromptActivity"></activity>
+        <activity android:name="com.sale.cadastro.VendaActivity" 
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.cadastro.ListaVendas" android:launchMode="singleTop" 
+            android:parentActivityName="pedidos.PedidosFragment">
+            
+        </activity>
+        <activity android:name="com.sale.cadastro.FormularioProdutoActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.cadastro.ListaProdutoActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.cadastro.TableActivity"></activity>
+        <activity android:name="com.sale.login.Login"></activity>
+        <activity android:name="com.sale.cadastro.ListaPessoas" 
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.cadastro.ProdutoActivity"
+            android:launchMode="singleTop"></activity>
+        <activity android:name="com.sale.login.TelaInicial" 
+            android:launchMode="singleTop"></activity>
+        <activity android:name="cadastro_usuario.CadastroUsuario"></activity>
+        <activity android:name="com.sale.cadastro.PagamentoActivity"></activity>
+        <activity android:name="com.sale.cadastro.ListaPagamentos"
+            android:launchMode="singleTop"></activity>
+        
+        
+              
+         <activity android:name="com.sale.relatorios.Relatorio2"
+            android:launchMode="singleTop"></activity>
+        
+                  <activity android:name="com.sale.cadastro.BuscaRelatorioActivity"
+            android:launchMode="singleTop"></activity>
+         
+             <activity android:name="com.sale.cadastro.ListaPessoasAbrirVenda"
+                  android:launchMode="singleTop"></activity>
+        
+        <activity android:name="com.sale.cadastro.ListaVendasAbertas"
+        		  android:parentActivityName="com.sale.cadastro.util.MenuInicial" 
+        		  android:launchMode="singleTop">
+		 </activity>
+		 
+        <activity android:name="com.sale.relatorios.RelatorioPagamentos" android:launchMode="singleTop"></activity>
+       <activity android:name="com.sale.cadastro.util.MenuInicial"> </activity>
+               <activity android:name="pedidos.PedidosFragment" 
+                   android:launchMode="singleTop"
+                   android:parentActivityName="com.sale.cadastro.util.MenuInicial"> </activity>
+       <activity android:name="com.sale.cadastro.BuscaRelatorioPagamentosActivity" android:launchMode="singleTop"></activity>
+       <activity android:name="com.sale.cadastro.TelaRelatorios" android:launchMode="singleTop"></activity>
+		    <!-- android:theme="@style/MyActionBarTabText" Adicionar o tema na activity -->    
+       <!-- com.sale.login.VerificaLogin 
+       com.sale.cadastro.PagamentoActivity
+       com.sale.cadastro.ListaPagamentos
+       -->
+        <activity
+            android:name="com.sale.login.VerificaLogin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+           
+        <receiver android:name="com.sale.cadastro.SMSReceiver"  android:enabled="true">
+            <intent-filter> 
+                <action android:name="ALARME_DISPARADO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                
+                </intent-filter>
+       
+        </receiver>
+       
+         <receiver android:name="com.sale.cadastro.SMSReceiver1" android:enabled="true">
+            <intent-filter> 
+                <action android:name="ALARME_DISPARADO_NOVO"/>
+                
+                </intent-filter>
+       
+        </receiver>
+
+    
+       <receiver android:name="com.sale.cadastro.util.SampleBootReceiver" android:label="Util" 
+           android:installLocation="internalOnly">
+            <intent-filter> 
+                <category android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+                
+       
+        </receiver>
+       
+       
+    </application>
+    
+</manifest>
